@@ -4,9 +4,9 @@ This documentation contains step-by-step guide on how to install zsh in Docker, 
 ```shell
 docker run --rm -it -gpus all -v $HOME:/root/$USER [dockerimagename]
 ```
-  - `-v $HOME:/root/$USER` will mount your home directory on the server. If you do not wish the Docker to access your files on the server, remove this part.
-  - You can try to run the Ubuntu 16.04 image (ubuntu:16.04) on the server, or any other image suitable on Docker hub.
-  - More info on docker flags and commands can be found in [Docker documentation](https://docs.docker.com/reference/)
+    - `-v $HOME:/root/$USER` will mount your home directory on the server. If you do not wish the Docker to access your files on the server, remove this part.
+    - You can try to run the Ubuntu 16.04 image (ubuntu:16.04) on the server, or any other image suitable on Docker hub.
+    - More info on docker flags and commands can be found in [Docker documentation](https://docs.docker.com/reference/)
 * Once inside Docker, run the following commands to install neccessary packages:
 ```shell
 apt update
