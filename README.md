@@ -96,6 +96,6 @@ function tunnel() {
 ## Important things to note while using a shared server
 * Do _NOT_ sudo into a server that you have root access. This will affect the whole server and other people who are using it.
 * Use a virtual environment or Docker to do your projects and install dependencies. Check out the following:
-        * [Docker Documentation](https://docs.docker.com/reference/)
-        * [How to create and use Virtual Environments (Python)](https://realpython.com/python-virtual-environments-a-primer/#why-the-need-for-virtual-environments)
-        * [How to create and use Virtual Environments (Conda)](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+  - [Docker Documentation](https://docs.docker.com/reference/)
+  - [How to create and use Virtual Environments (Python)](https://realpython.com/python-virtual-environments-a-primer/#why-the-need-for-virtual-environments)
+  - [How to create and use Virtual Environments (Conda)](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
