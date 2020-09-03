@@ -2,11 +2,11 @@
 Documentation based on materials from [MIT The Missing Semester of Your CS Education course](https://missing.csail.mit.edu)
 
 ## 1. Shell overview
-# What is shell?
+### What is shell?
 * A program that takes commands from the keyboard and gives them to the operating system to perform
-# What is bash?
+### What is bash?
 * Bourne Again SHell, a very widely used shell
-# Is there any other (cooler) shell?
+### Is there any other (cooler) shell?
 * I use Z shell (zsh - an extended version of bash) with ohmyzsh configurations from Ming Rui 
 * Check [this file] for how to install zsh with Ming Rui's configs
 
