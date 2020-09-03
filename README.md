@@ -15,9 +15,9 @@ Documentation based on materials from [MIT The Missing Semester of Your CS Educa
   ```shell
   user.name@server-name-ip-11-222-333-444:~$
   ```
-  The part `user.name@server-name-ip-11-222-333-444` indicates the machine you are on, the `~` symbol means that you are in the home directory (aka the path that you will reach when you type `cd`) and `$` means that you are not the root user.
-  Root is the superuser account in Unix and Linux. This user will have access to all command and files, with powers that normal user cannot such as installing software or changing file ownership. If a user is provided root access, the user can use the `sudo` command (short for SuperUser DO). 
-  However, with great power comes great responsibility. You _might easily break something_ while using `sudo`. This will affect a lot of people if you are sharing a server with others. In short, do _NOT_ `sudo` into a shared server if you're not sure!
+  - The part `user.name@server-name-ip-11-222-333-444` indicates the machine you are on, the `~` symbol means that you are in the home directory (aka the path that you will reach when you type `cd`) and `$` means that you are not the root user.
+  - Root is the superuser account in Unix and Linux. This user will have access to all command and files, with powers that normal user cannot such as installing software or changing file ownership. If a user is provided root access, the user can use the `sudo` command (short for SuperUser DO). 
+  - However, with great power comes great responsibility. You _might easily break something_ while using `sudo`. This will affect a lot of people if you are sharing a server with others. In short, do _NOT_ `sudo` into a shared server if you're not sure!
 
 * Common shell commands can be found under this [Bash Scripting Cheatsheet](https://devhints.io/bash). It works for Z shell too!
 
