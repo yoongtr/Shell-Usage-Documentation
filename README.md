@@ -45,11 +45,41 @@ Documentation based on materials from [MIT The Missing Semester of Your CS Educa
   
 * How to keep your scripts running on the server even though you lost connection: use `tmux` (see [Tmux Cheat Sheet](https://tmuxcheatsheet.com)) or `screen` ([Screen Cheat Sheet](https://gist.github.com/jctosta/af918e1618682638aa82)).
   
-* For each command there are certain flags, for example typing `ls` will give you the list of files inside your current directory. However to see all hidden files, you need to use the `a` flag, i.e. by typing `ls -a`. To see all the details about the flags, use the `man` command. E.g. `man ls`.
+* `man`: For each command there are certain flags, for example typing `ls` will give you the list of files inside your current directory. However to see all hidden files, you need to use the `a` flag, i.e. by typing `ls -a`. To see all the details about the flags, use the `man` command. E.g. `man ls`.
 
 ## 3. STDIN, STDOUT, and basic piping
+* STDIN is a stream where a program receives and reads the input data
+* STDOUT is a stream that delivers the text output from the command to the shell
+* One simple way to rewire these streams is by `>` (rewire input) and `<` (rewire output).
+* For example:
+```shell
+root@e2ea30e4ce2a:~/playground/demo
+# echo 'hello' > file1                                                                             20-09-03 - 8:00:23
+
+root@e2ea30e4ce2a:~/playground/demo
+# cat file1                                                                                        20-09-03 - 8:21:52
+hello
+```
+* As you see from the above, output of `echo 'hello'`, which is the text 'hello', became the input to be written in file1. You can also use `>>` to append a file.
+* Another method is to use pipes with the `|` operator. The output of the command before `|` will be the input of the command after `|`. For example:
+```shell
+root@e2ea30e4ce2a:~/playground/demo
+# cat file1 | head -n1                                                                             20-09-03 - 8:25:54
+hello
+```
 
 ## 4. Vim editor
+* There are many text editors to write code or edit text files, including vim.
+* To learn more about vim commands, run `vimtutor` in your terminal (that has already have vim inside) and follow the instructions
+* To start editing a file, use `vim filename`
+* Basic usage inside vim:
+      `esc`: Escape key to go back to normal mode
+      `i`: insert mode (to insert words)
+      `v`: visual mode (for highlighting)
+      `hjkl`: navigating, left, down, up, right respectively
+      `:q!`: force quite, discard changes
+      `:x` or `:wq`: write and quit
+* The above list is non-exhaustive. Look through `vimtutor` for more commands.
 
 ## 5. Some additional stuff
 * If you want to have some modifications to your shell commands, e.g. you want a shorter way of typing `ssh -N -f -L [port]:localhost:[port] username@servername` every time you want to tunnel to server, you can edit it in your ~/.zshrc file.
@@ -65,4 +95,7 @@ function tunnel() {
 
 ## Important things to note while using a shared server
 * Do _NOT_ sudo into a server that you have root access. This will affect the whole server and other people who are using it.
-* Use a virtual environment or Docker to do your projects and install dependencies. Check out Docker Virtual Environment usage for dummies.
+* Use a virtual environment or Docker to do your projects and install dependencies. Check out the following:
+        * [Docker Documentation](https://docs.docker.com/reference/)
+        * [How to create and use Virtual Environments (Python)](https://realpython.com/python-virtual-environments-a-primer/#why-the-need-for-virtual-environments)
+        * [How to create and use Virtual Environments (Conda)](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
