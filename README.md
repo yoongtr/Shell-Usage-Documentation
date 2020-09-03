@@ -40,7 +40,9 @@ Documentation based on materials from [MIT The Missing Semester of Your CS Educa
   - `cp`: copy files. E.g. `cp [source directory] [destination directory]`. Works for multiple files too.
   - `mv`: move files or change file name. Same usage as `cp`.
   - `head -n [N] filename`, `tail -n [N] filename`: prints first (head) or last (tail) N lines of a file
-  - `rsync`: to sync your local files to the server and vice versa. See [Rsync Cheat Sheet](https://devhints.io/rsync)
+  - `rsync`: to sync your local files to the server and vice versa. See [Rsync Cheat Sheet](https://devhints.io/rsync).
+  
+* How to keep your scripts running on the server even though you lost connection: use `tmux` (see [Tmux Cheat Sheet](https://tmuxcheatsheet.com)) or `screen` ([Screen Cheat Sheet](https://gist.github.com/jctosta/af918e1618682638aa82)).
   
 * For each command there are certain flags, for example typing `ls` will give you the list of files inside your current directory. However to see all hidden files, you need to use the `a` flag, i.e. by typing `ls -a`. To see all the details about the flags, use the `man` command. E.g. `man ls`.
 
