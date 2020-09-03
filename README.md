@@ -8,7 +8,7 @@ Documentation based on materials from [MIT The Missing Semester of Your CS Educa
 * Bourne Again SHell, a very widely used shell
 ### Is there any other (cooler) shell?
 * I use Z shell (zsh - an extended version of bash) with ohmyzsh configurations from Ming Rui 
-* Check [this file] for how to install zsh with Ming Rui's configs
+* Check [this file](https://github.com/yoongtr/Shell-Usage-Documentation/blob/master/How%20to%20install%20ZSH%20with%20docker.md) for how to install zsh with Ming Rui's configs
 
 ## 2. Basic Shell Usage
 * When you open the server, you should see something like this:
@@ -31,7 +31,7 @@ Documentation based on materials from [MIT The Missing Semester of Your CS Educa
       - `cd ..`: go up one level, i.e. parent directory.
       - `cd -`: go back one level.
   - `ls`: list files inside your current directory.
-      - `ls -lah -t`: list all files, including hidden file (`-a` flag), in long format (`-l` flag), in human readable size (`-h` flag), ordered by recency (`t` flag).
+      - `ls -lah -t`: list all files, including hidden file (`-a` flag), in long format (`-l` flag), in human readable size (`-h` flag), ordered by recency (`-t` flag).
       - `ls` + path: list all files inside specific path
   - `cat` + filename: print file, i.e. shows the contents of the file in your terminal. Works for multiple files too.
   - `vim` + filename: open vim editor to view or edit the file. See section 4 for more information on vim editor.
@@ -39,6 +39,7 @@ Documentation based on materials from [MIT The Missing Semester of Your CS Educa
   - `touch`: creates a new file. E.g. `touch filename.txt`
   - `cp`: copy files. E.g. `cp [source directory] [destination directory]`. Works for multiple files too.
   - `mv`: move files or change file name. Same usage as `cp`.
+  - `rm`: remove files
   - `head -n [N] filename`, `tail -n [N] filename`: prints first (head) or last (tail) N lines of a file
   - `rsync`: to sync your local files to the server and vice versa. See [Rsync Cheat Sheet](https://devhints.io/rsync).
   
@@ -64,4 +65,4 @@ function tunnel() {
 
 ## Important things to note while using a shared server
 * Do _NOT_ sudo into a server that you have root access. This will affect the whole server and other people who are using it.
-* Use a virtual environment or Docker to do your projects and install dependencies.
+* Use a virtual environment or Docker to do your projects and install dependencies. Check out Docker Virtual Environment usage for dummies.
