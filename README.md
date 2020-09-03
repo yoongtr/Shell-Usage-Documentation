@@ -73,12 +73,12 @@ hello
 * To learn more about vim commands, run `vimtutor` in your terminal (that has already have vim inside) and follow the instructions
 * To start editing a file, use `vim filename`
 * Basic usage inside vim:
-      `esc`: Escape key to go back to normal mode
-      `i`: insert mode (to insert words)
-      `v`: visual mode (for highlighting)
-      `hjkl`: navigating, left, down, up, right respectively
-      `:q!`: force quite, discard changes
-      `:x` or `:wq`: write and quit
+  - `esc`: Escape key to go back to normal mode
+  - `i`: insert mode (to insert words)
+  - `v`: visual mode (for highlighting)
+  - `hjkl`: navigating, left, down, up, right respectively
+  - `:q!`: force quite, discard changes
+  - `:x` or `:wq`: write and quit
 * The above list is non-exhaustive. Look through `vimtutor` for more commands.
 
 ## 5. Some additional stuff
