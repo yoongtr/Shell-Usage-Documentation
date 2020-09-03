@@ -24,12 +24,12 @@ Documentation based on materials from [MIT The Missing Semester of Your CS Educa
 * When you are uncertain, `-h` or `--help` flag will print out the short explanation for the command. Try `ls -h` and see.
 
 * Common commands to note for dummies:
-  `pwd`: print your current working directory
-  `cd`: take you to home directory
-      `cd` + path: take to the specific path
-      `cd .`: current directory
-      `cd ..`: go up one level, i.e. parent directory
-      `cd -`: go back one level
+  - `pwd`: print your current working directory
+  - `cd`: take you to home directory
+      - `cd` + path: take to the specific path
+      - `cd .`: current directory
+      - `cd ..`: go up one level, i.e. parent directory
+      - `cd -`: go back one level
 * For each command there are certain flags, for example typing `ls` will give you the list of files inside your current directory. However to see all hidden files, you need to use the `a` flag, i.e. by typing `ls -a`. To see all the details about the flags, use the `man` command. E.g. `man ls`.
 
 ## 3. STDIN, STDOUT, and basic piping
