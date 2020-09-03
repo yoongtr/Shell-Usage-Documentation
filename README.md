@@ -8,7 +8,7 @@ Documentation based on materials from [MIT The Missing Semester of Your CS Educa
 * Bourne Again SHell, a very widely used shell
 # Is there any other (cooler) shell?
 * I use Z shell (zsh - an extended version of bash) with ohmyzsh configurations from Ming Rui 
-* How to install zsh: (link + how to install)
+* Check [this file] for how to install zsh with Ming Rui's configs
 
 ## 2. Basic Shell Usage
 * When you open the server, you should see something like this:
@@ -40,7 +40,7 @@ Documentation based on materials from [MIT The Missing Semester of Your CS Educa
   - `cp`: copy files. E.g. `cp [source directory] [destination directory]`. Works for multiple files too.
   - `mv`: move files or change file name. Same usage as `cp`.
   - `head -n [N] filename`, `tail -n [N] filename`: prints first (head) or last (tail) N lines of a file
-  - `rsync`: to sync your local files to the server and vice versa. See [rsync cheat sheet](https://devhints.io/rsync)
+  - `rsync`: to sync your local files to the server and vice versa. See [Rsync Cheat Sheet](https://devhints.io/rsync)
   
 * For each command there are certain flags, for example typing `ls` will give you the list of files inside your current directory. However to see all hidden files, you need to use the `a` flag, i.e. by typing `ls -a`. To see all the details about the flags, use the `man` command. E.g. `man ls`.
 
