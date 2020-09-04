@@ -90,7 +90,7 @@ function tunnel() {
  ssh -N -f -L localhost:$1\:localhost:$1 $2@$3
 }
 ```
-* After this, whenever you want to tunnel just type `tunnel [port] username@servername`
+* After this, whenever you want to tunnel just type `tunnel [port] username servername`
 * This works for any command!
 
 ## Important things to note while using a shared server
