@@ -91,7 +91,7 @@ function tunnel() {
 }
 ```
 * After this, whenever you want to tunnel just type `tunnel [port] username servername`
-* This works for any command!
+* This is called alias, you can Google it to customize your bash, zsh, and even vim commands!
 
 ## Important things to note while using a shared server
 * Do _NOT_ sudo into a server that you have root access. This will affect the whole server and other people who are using it.
