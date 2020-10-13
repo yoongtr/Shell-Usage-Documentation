@@ -53,17 +53,17 @@ Documentation based on materials from [MIT The Missing Semester of Your CS Educa
 * One simple way to rewire these streams is by `>` (rewire input) and `<` (rewire output).
 * For example:
 ```shell
-root@e2ea30e4ce2a:~/playground/demo
+root@machine:~/playground/demo
 # echo 'hello' > file1                                                                             20-09-03 - 8:00:23
 
-root@e2ea30e4ce2a:~/playground/demo
+root@machine:~/playground/demo
 # cat file1                                                                                        20-09-03 - 8:21:52
 hello
 ```
 * As you see from the above, output of `echo 'hello'`, which is the text 'hello', became the input to be written in file1. You can also use `>>` to append a file.
 * Another method is to use pipes with the `|` operator. The output of the command before `|` will be the input of the command after `|`. For example:
 ```shell
-root@e2ea30e4ce2a:~/playground/demo
+root@machine:~/playground/demo
 # cat file1 | head -n1                                                                             20-09-03 - 8:25:54
 hello
 ```
